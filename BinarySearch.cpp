@@ -76,3 +76,15 @@ void binarysearch()
         cout << "\n=======================================\n";
         cout << "masukkan elemen yang ingin di cari : ";
         cin >> x;
+        
+        int low = 0;
+        int high = nPanjang - 1;
+
+        do
+        {
+            int mid = (low + high) / 2;
+
+            if (x == element[mid])
+            {
+                cout << "elemen " << x << " ditemukan pada indeks ke-" << mid << endl;
+                break;
